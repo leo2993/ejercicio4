@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="misEstilos.css">
+<title>Series</title>
+</head>
+<body>
+	<main>
+		<h1 id="titulo_web">Películas | Mejores del 2021 | Netflix</h1>
+		<table>
+			<tr id="cabecera">
+				<th>Portada</th>
+				<th>Titulo</th>
+				<th>Sinopsis</th>
+				<th class="anyoEstrenoCabecera">Estreno</th>
+				<th>Duración</th>
+			</tr>
+			<tr th:each="pelicula : ${peliculas}" class="pelicula">
+				<td class="portada"><img th:src="@{${pelicula.imagen}}"/></td>
+				<td th:text="${pelicula.titulo}" class="titulo"/>
+				<td th:text="${pelicula.sinopsis}" class="sinopsis"/>
+				<td th:text="${pelicula.anyoEstreno}" class="anyoEstreno"/>
+				<td th:text="${pelicula.duracion}" class="duracion"/>
+			</tr>
+		</table>
+	</main>
+</body>
+</html>

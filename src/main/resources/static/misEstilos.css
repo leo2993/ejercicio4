@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+	background-image: url("back.png");
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+#titulo_web {
+	text-align: center;
+	padding-top: 50px;
+	color: white;
+	user-select: none;
+}
+
+table {
+	width: 80%;
+	margin: auto;
+	margin-top: 50px;
+	border-collapse:separate;
+    border-spacing:0 10px;
+    user-select: none;
+}
+
+table #cabecera {
+	font-weight: bold;
+	font-size: 24px;
+}
+
+table #cabecera th {
+	padding-bottom: 0.5em;
+}
+
+table .serie td, table .pelicula td {
+	padding: 1.5em;
+}
+
+.portada {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.portada img {
+	display: block;
+	margin: auto;
+	width: 96px;
+	height: 160px;
+}
+
+.titulo {
+	font-size: 24px;
+}
+
+.sinopsis {
+	padding: 1em;
+}
+
+.anyoEstreno  {
+	text-align:left;
+	font-size: 20px;
+	font-weight: bold;
+	padding-right: 2em;
+}
+
+.anyoEstreno, .anyoEstrenoCabecera  {
+	text-align:left;
+	padding-right: 2em;
+}
+
+.temporadas, .duracion {
+	font-size: 24px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.titulo, .temporadas, .duracion {
+	text-align: center;
+	color: white;
+}
+
+table .serie, table .pelicula {
+	transition:all 1.3s;
+	cursor: pointer;
+}
+
+table .serie:hover, table .pelicula:hover {
+	background-color:rgba(63,63,191,0.65);
+	color: white;
+	font-weight: bold;
+}
